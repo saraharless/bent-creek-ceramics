@@ -69,3 +69,35 @@ h3 {
   margin-top: -20px;
   padding-bottom: 20px;
 }
+
+.collage {
+  display: flex;
+  width: 1200px;
+  display: inline-block;
+}
+
+.collage img {
+  height: 300px;
+}
+
+p {
+  background-color: #2B2F26;
+  color: #F2F1E8;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+#row-one {
+  justify-content: center;
+  flex-direction: row;
+}
+
+#row-one caption {
+  z-index: 2;
+}
+
+#row-two {
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
