@@ -71,40 +71,135 @@ h3 {
 }
 
 .collage {
-  display: flex;
-  max-width: 1200px;
   display: inline-block;
+  margin: 0 2% 0 2%;
 }
 
-.collage img {
-  height: 300px;
-}
-
-p {
+.collage p {
   background-color: #2B2F26;
   color: #F2F1E8;
-  display: inline-block;
-  padding: 10px 20px;
-  z-index: 0;
-  position: relative;
+  /*display: inline-block;*/
+  /*padding: 10px 20px;
   bottom: 25px;
-  left: -400px;
+  left: -400px;*/
+  /*justify-content: center;*/
 }
 
 #row-one {
-  justify-content: center;
-  flex-direction: row;
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
 }
 
-#row-one caption {
+.product {
+  justify-content: space-between;
+}
+
+#row-one p {
+  padding: 20px;
+  margin: 10px 20px;
   z-index: 2;
 }
 
+#product-1, #product-2, #product-3 {
+  height: 300px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#product-1 {
+  background-image: url("./images/optimized/product-1.jpg");
+  background-size: cover;
+  flex: 3 0 0;
+  margin-right: 10px;
+}
+
+#product-2 {
+  background-image: url("./images/optimized/product-2.jpg");
+  background-size: cover;
+  flex: 1 0 0;
+  margin-right: 10px;
+}
+
+#product-3 {
+  background-image: url("./images/optimized/product-3.jpg");
+  background-size: cover;
+  flex: 1 0 0;
+}
+
 #row-two {
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  justify-content: space-between;
+}
+
+#row-two p {
+  padding: 20px;
+  margin: 10px 20px;
+  z-index: 2;
 }
 
 #row-two caption {
   z-index: 2;
+}
+
+#product-4, #product-5, #product-6, #product-7 {
+  height: 300px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#product-4 {
+  background-image: url("./images/optimized/product-4.jpg");
+  background-size: cover;
+  flex: 1 0 0;
+  margin-right: 10px;
+}
+
+#product-5 {
+  background-image: url("./images/optimized/product-5.jpg");
+  background-size: cover;
+  flex: 1 0 0;
+  margin-right: 10px;
+}
+
+#product-6 {
+  background-image: url("./images/optimized/product-6.jpg");
+  background-size: cover;
+  flex: 2 0 0;
+  margin-right: 10px;
+}
+
+#product-7 {
+  background-image: url("./images/optimized/product-7.jpg");
+  background-size: cover;
+  flex: 1 0 0;
+}
+
+footer {
+  background-color: #2B2F26;
+  color: #F2F1E8;
+  padding: 6px 6px 6px 20px;
+  text-align: left;
+
+}
+
+/*Code for about page begins here*/
+.intro {
+  font-family: Roboto, sans-serif;
+  background-color: #F2F1E8;
+  margin: 0;
+  text-align: center;
+}
+
+.intro img {
+  height: 100px;
+}
+
+.intro p {
+  float:right;
+}
