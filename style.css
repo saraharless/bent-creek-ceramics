@@ -22,9 +22,13 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  width: 100%;
   background-color: white;
   display: flex;
   text-align: center;
+  box-shadow: 2px 2px 2px #d3d3d3;
 }
 
 nav {
@@ -42,6 +46,7 @@ nav a {
 
 nav a:hover {
   color: #CD5D67;
+  background-color: lavender;
 }
 
 nav a:active {
@@ -140,7 +145,7 @@ h3 {
 #product-4, #product-5, #product-6, #product-7 {
   height: 150px;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 115px;
 }
 
 #product-4 {
@@ -261,11 +266,11 @@ td {
   background-color: #ECE4D7;
 }
 
-#linkto a {
+.intro a {
   color: #968772;
 }
 
-#linkto a hover {
+.intro a:hover {
   color: #967343;
 }
 
@@ -277,6 +282,7 @@ td {
   justify-content: center;
   background-image: url("./images/optimized/background-2.jpg");
   background-size: cover;
+  height: 100%;
 }
 
 .form-content {
@@ -287,17 +293,31 @@ td {
   font-family: Merriweather, serif;
 }
 
-/*.form-content h3 {
+.form-content h3 {
   margin-top: 20px;
 }
 
-.form-content p {
-  margin-top: 10px;
+.form-box p {
   font-size: 1.1em;
-}*/
+  padding: 0 20px;
+}
+
+input {
+  width: 95%;
+  border-style: hidden;
+  border-bottom: solid 2px #968772;
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin-top: 30px;
+
+}
 
 button {
   background-color: #968772;
   color: #F2F1E8;
-  padding: 10px 20px;
+  padding: 16px 30px;
+  font-size: 1em;
+  margin: 4% 2% 4% 2%;
+  border-style: none;
+
 }
