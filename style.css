@@ -18,6 +18,7 @@ body {
   background-color: #F2F1E8;
   margin: 0;
   text-align: center;
+  font-size: 1.1em;
 }
 
 header {
@@ -52,8 +53,12 @@ nav a:active {
   padding: 10px;
 }
 
+p {
+  line-height: 2;
+}
+
 h1 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-family: Merriweather, serif;
   font-weight: normal;
   margin-bottom: 30px;
@@ -62,12 +67,9 @@ h1 {
 h3 {
   font-family: Merriweather, serif;
   font-weight: lighter;
-  font-size: 2em;
-  padding-top: 0;
-  margin-top: 0;
-  padding-top: -20px;
-  margin-top: -20px;
-  padding-bottom: 20px;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
 }
 
 .collage {
@@ -78,31 +80,20 @@ h3 {
 .collage p {
   background-color: #2B2F26;
   color: #F2F1E8;
-  /*display: inline-block;*/
-  /*padding: 10px 20px;
-  bottom: 25px;
-  left: -400px;*/
-  /*justify-content: center;*/
 }
 
-#row-one {
-  background-color: pink;
+#row-one, #row-two {
   display: flex;
   justify-content: space-between;
 }
 
 .product {
-  justify-content: space-between;
-}
-
-#row-one p {
-  padding: 20px;
-  margin: 10px 20px;
-  z-index: 2;
+  /*justify-content: space-between;*/
+  align-items: flex-end;
 }
 
 #product-1, #product-2, #product-3 {
-  height: 300px;
+  height: 250px;
   display: flex;
   margin-bottom: 10px;
 }
@@ -127,28 +118,15 @@ h3 {
   flex: 1 0 0;
 }
 
-#row-two {
-  background-color: pink;
-  display: flex;
-  justify-content: space-between;
-}
-
-.product {
-  justify-content: space-between;
-}
-
-#row-two p {
-  padding: 20px;
+.product p {
+  padding: 10px;
   margin: 10px 20px;
-  z-index: 2;
-}
-
-#row-two caption {
-  z-index: 2;
+  font-family: Merriweather, serif;
+  font-weight: lighter;
 }
 
 #product-4, #product-5, #product-6, #product-7 {
-  height: 300px;
+  height: 150px;
   display: flex;
   margin-bottom: 20px;
 }
@@ -185,21 +163,85 @@ footer {
   color: #F2F1E8;
   padding: 6px 6px 6px 20px;
   text-align: left;
-
+  font-family: Merriweather, serif;
+  font-weight: lighter;
 }
 
 /*Code for about page begins here*/
+
+
+.top h3, .lower h3 {
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+}
+
+.top, .lower {
+  margin: 0 12% 3% 12%;
+  text-align: left;
+}
+
 .intro {
   font-family: Roboto, sans-serif;
   background-color: #F2F1E8;
-  margin: 0;
-  text-align: center;
+  text-align: left;
+  display: flex;
 }
 
 .intro img {
-  height: 100px;
+  height: 150px;
+  float: left;
+  margin-right: 2%;
+  margin-top: 3%;
 }
 
-.intro p {
-  float:right;
+blockquote {
+  border-left: solid 1px;
+  margin: 2% 0;
+  padding-left: 20px;
+  text-align: left;
+  font-style: italic;
+  line-height: 2;
+  font-weight: lighter;
+}
+
+#grow {
+  background-image: url("./images/optimized/background-3.jpg");
+  background-size: cover;
+  width: 100%;
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: Merriweather, serif;
+  font-size: 2.5em;
+}
+
+.lower_p1 {
+  display: flex;
+}
+
+.lower_p1 img {
+  float: right;
+  height: 150px;
+}
+
+figure img {
+  margin-bottom: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 1em;
+  text-align: center;
+}
+
+td {
+  font-family: Merriweather, serif;
+  border: solid 1px;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+
+.dark {
+  background-color: #ECE4D7;
 }
