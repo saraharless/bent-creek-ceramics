@@ -195,15 +195,20 @@ footer {
 .intro {
   font-family: Roboto, sans-serif;
   background-color: #F2F1E8;
-  text-align: left;
-  display: flex;
+  /*display: flex;*/
+
+}
+
+.para {
+  font-weight: bold;
 }
 
 .intro img {
   height: 100px;
   float: left;
-  margin-right: 2%;
-  margin-top: 3%;
+  padding-right: 15px;
+  /*margin-right: 2%;
+  margin-top: 3%;*/
 }
 
 blockquote {
@@ -256,4 +261,45 @@ td {
 
 .dark {
   background-color: #ECE4D7;
+}
+
+#linkto a {
+  color: #968772;
+}
+
+#linkto a hover {
+  color: #967343;
+}
+
+/*Beginning of Newsletter styling*/
+.form-section {
+  min-height: auto;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  background-image: url("./images/optimized/background-2.jpg");
+  background-size: cover;
+}
+
+.form-content {
+  background-color: white;
+  padding: 20px 40px;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  font-family: Merriweather, serif;
+}
+
+/*.form-content h3 {
+  margin-top: 20px;
+}
+
+.form-content p {
+  margin-top: 10px;
+  font-size: 1.1em;
+}*/
+
+button {
+  background-color: #968772;
+  color: #F2F1E8;
+  padding: 10px 20px;
 }
